@@ -1,0 +1,87 @@
+<section class="perfil-usuario">
+  <div class="wrapper">
+    <mat-drawer-container>
+
+      <mat-drawer #drawer mode='over' position="start">
+        <!-- Inyectamos el componente partial que muestra el menú izquierdo -->
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+      <div class="perfil">
+        <!-- Portada -->
+        <div class="perfil-portada">
+          <img src="/assets/images/portada.jpg" alt="Portada de usuario">
+        </div>
+
+        <!-- Avatar flotante -->
+        <div class="perfil-avatar">
+          <img src="/assets/images/avatar-user.jpeg" alt="Avatar de usuario">
+        </div>
+
+        <!-- Card de información -->
+        <div class="perfil-card">
+
+          <!-- encabezado -->
+          <div class="section-image">
+            <div class="eslogan {{isMobile()}}">
+              <div class="line-color">
+                <div class="vertical-line" style="height: 111px;"></div>
+              </div>
+              <div class="title-link">
+                <span>Perfil del usuario</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vista normal -->
+          <div *ngIf="!editando">
+            <h2 class="perfil-nombre">{{ perfil.nombre }}</h2>
+            <div class="perfil-info">
+              <p><strong>Correo:</strong> {{ perfil.correo }}</p>
+              <p><strong>Teléfono:</strong> {{ perfil.telefono }}</p>
+              <p><strong>Ciudad:</strong> {{ perfil.ciudad }}</p>
+              <p><strong>Universidad:</strong> {{ perfil.universidad }}</p>
+            </div>
+          </div>
+
+          <!-- Vista edición -->
+          <div *ngIf="editando">
+            <form class="form-perfil">
+              <input type="text" [(ngModel)]="perfil.nombre" name="nombre" placeholder="Nombre completo">
+              <input type="email" [(ngModel)]="perfil.correo" name="correo" placeholder="Correo electrónico">
+              <input type="tel" [(ngModel)]="perfil.telefono" name="telefono" placeholder="Teléfono">
+              <input type="text" [(ngModel)]="perfil.ciudad" name="ciudad" placeholder="Ciudad">
+              <input type="text" [(ngModel)]="perfil.universidad" name="universidad" placeholder="Universidad">
+            </form>
+
+          </div>
+
+
+        </div>
+
+        <!-- 🔽 Botón fuera de la card -->
+        <div class="btn-container">
+          <button class="btn-editar" (click)="toggleEdicion()">
+            {{ editando ? 'Guardar cambios' : 'Editar perfil' }}
+          </button>
+        </div>
+
+      </div>
+
+
+
+      <!-- 6. Footer -->
+      <div class="footer">
+        <app-footer-app></app-footer-app>
+      </div>
+
+
+
+
+    </mat-drawer-container>
+
+  </div>
+
+</section>
