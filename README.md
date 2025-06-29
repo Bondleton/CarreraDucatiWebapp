@@ -1,14 +1,12 @@
 # 🏍️ Carrera Ducati - Aplicación Web PWA
 
-![Logo Ducati](assets/images/logo-marcas.png)
+![Logo Ducati](/src/assets/images/logo-marcas.png) 
 
 ## 📖 Descripción
 
 **Carrera Ducati** es una aplicación web desarrollada con **Angular** que ofrece una experiencia interactiva de promoción y juego, con integración de funcionalidades como login, registro, perfil de usuario, bases de la promoción, instrucciones y un juego dinámico relacionado con la marca Ducati.
 
 La aplicación está diseñada para funcionar como una **Progressive Web App (PWA)**, lo que permite su instalación en dispositivos móviles y escritorio, ofreciendo un rendimiento rápido, acceso offline parcial y una experiencia nativa en diferentes plataformas.
-
----
 
 ## ✨ Características principales
 
@@ -21,8 +19,6 @@ La aplicación está diseñada para funcionar como una **Progressive Web App (PW
 - 🎮 Juego interactivo con sistema de puntuación.
 - 🌐 Aplicación desplegada como PWA con soporte offline y carga rápida.
 
----
-
 ## 🛠️ Tecnologías utilizadas
 
 - Angular 14+
@@ -31,8 +27,6 @@ La aplicación está diseñada para funcionar como una **Progressive Web App (PW
 - HTML5 / CSS3 / SCSS
 - LocalStorage para persistencia de perfil
 - PWA (Service Worker, Manifest)
-
----
 
 ## 🚀 Instalación y ejecución local
 
