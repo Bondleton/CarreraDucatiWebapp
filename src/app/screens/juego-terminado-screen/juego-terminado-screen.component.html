@@ -1,0 +1,59 @@
+<section class="juego">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <!-- Menú lateral izquierdo -->
+      <mat-drawer #drawer mode='over' position="start">
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+      <!-- Cabecera con el logo -->
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+      <!-- Sección del body donde se muestra todo el contenido -->
+
+      <div class="body-juego">
+
+        <!-- Sección del eslogan -->
+        <div class="section-title">
+          <div class="eslogan {{isMobile()}}">
+            <div class="line-color">
+              <div class="vertical-line" style="height: 111px;"></div>
+            </div>
+            <div class="title-link">
+              <span style="text-transform: uppercase;">¡Excelente Carrera!</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de excelente carrera -->
+        <div class="puntaje-contenedor">
+          <div class="barra-roja"></div>
+          <div class="texto-obtuviste">OBTUVISTE</div>
+          <div class="puntaje-numero">1400</div>
+          <div class="puntaje-label">puntos</div>
+          <p class="texto-final"> Gracias por participar, acumula más puntos y <br> gana una increíble <strong>Ducati
+              Scrambler.</strong>
+          </p>
+
+          <!-- Sección para los botones -->
+          <div class="boton-centro">
+            <button class="inicio" (click)="irInicio()" [disabled]="isLoading">
+              <span class="text-btn">Ir al inicio</span>
+            </button>
+          </div>
+
+
+        </div>
+
+
+        <!-- 6. Footer -->
+        <div class="footer">
+          <app-footer-app pantalla="nuevo-look"></app-footer-app>
+        </div>
+
+      </div>
+
+
+
+    </mat-drawer-container>
+
+  </div>
+</section>

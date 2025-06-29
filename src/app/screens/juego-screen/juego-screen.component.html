@@ -1,0 +1,48 @@
+<section class="juego">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <!-- Menú lateral izquierdo -->
+      <mat-drawer #drawer mode='over' position="start">
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+      <!-- Cabecera con el logo -->
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+      <!-- Sección del body donde se muestra todo el contenido -->
+
+      <div class="body-juego">
+
+        <!-- Sección del eslogan -->
+        <div class="section-title">
+          <div class="eslogan {{isMobile()}}">
+            <div class="line-color">
+              <div class="vertical-line" style="height: 111px;"></div>
+            </div>
+            <div class="title-link">
+              <span style="text-transform: uppercase;">Juego</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de las imágenes para juego -->
+        <div class="section-lentes">
+          <div class="gif-wrapper"> <iframe src="https://giphy.com/embed/wKnqovL33x9in9ci6X" class="gif-frame"
+              frameborder="0" allowfullscreen> </iframe> </div>
+          <div class="triangle-button-container"> <button type="button" class="triangle-btn triangle-left"
+              (click)="accionBack()"></button> <button type="button" class="triangle-btn triangle-right"
+              (click)="accionPlay()"></button> </div>
+        </div>
+
+
+        <!-- 6. Footer -->
+        <div class="footer">
+          <app-footer-app pantalla="nuevo-look"></app-footer-app>
+        </div>
+
+      </div>
+
+
+
+    </mat-drawer-container>
+
+  </div>
+</section>

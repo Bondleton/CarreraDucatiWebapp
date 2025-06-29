@@ -1,0 +1,203 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.section-title {
+  border-top: 1px solid #7A7A7A1F !important;
+  //border-bottom: 1px solid #7A7A7A1F!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.body-juego {
+  width: 100%;
+  height: 90vh;
+  background-color: #FFFFFF;
+  overflow-y: scroll !important;
+  //overflow-x: hidden!important;
+}
+
+.eslogan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // max-width: 40%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.interior-normal {
+  max-width: 40%;
+}
+
+.interior-mobile {
+  width: 100%;
+}
+
+.line-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 5%;
+}
+
+.vertical-line {
+  width: 5px;
+  /* Line width */
+  background-color: #CD0000;
+  /* Line color */
+  height: 40px !important;
+  /* Override in-line if you want specific height. */
+  float: left;
+}
+
+.title-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  //Fuente
+  text-align: left;
+  font-family: Avenir-Bold;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.txt-inicio {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  text-align: left;
+  font-family: Avenir;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+//Button
+.mdc-button {
+  background: #CD0000 0% 0% no-repeat padding-box;
+  // opacity: 1;
+  width: 188px;
+  height: 40px;
+  border-radius: 0;
+
+  //Fuente
+  .text-btn {
+    text-align: center;
+    font-family: Avenir;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  .text-btn-basic {
+    text-align: center;
+    font-family: Avenir;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: #CD0000;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+
+
+.puntaje-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Avenir', sans-serif;
+}
+
+.barra-roja {
+  width: 90px;
+  height: 160px;
+  background-color: #CD0000;
+  // margin-bottom: 1.5rem;
+}
+
+.texto-obtuviste {
+  font-size: 14px;
+  // font-family: 'Avenir-Black', sans-serif;
+  font-family: Avenir-Bold;
+  color: #CD0000;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+.puntaje-numero {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: 'Avenir-Black', sans-serif;
+  color: #000000;
+  margin-bottom: 0.2rem;
+  padding-bottom: 22px;
+}
+
+.puntaje-label {
+  font-size: 20px;
+  font-family: 'Avenir', sans-serif;
+  color: #000000;
+  // margin-bottom: 72px;
+  padding-bottom: 62px;
+
+}
+
+.texto-final {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000000;
+  font-family: 'Avenir', sans-serif;
+}
+
+.texto-final strong {
+  font-weight: bold;
+}
+
+.boton-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  // margin-top: 1.5rem;
+  // margin-bottom: 1.5rem;
+}
+
+.inicio {
+  background-color: #CD0000;
+  color: #ffffff;
+  width: 188px;
+  height: 40px;
+  border: none;
+  border-radius: 0;
+  font-family: Avenir;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.text-btn {
+  color: #ffffff;
+}

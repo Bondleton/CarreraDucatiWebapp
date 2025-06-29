@@ -53,7 +53,7 @@ export class HomeScreenComponent implements OnInit {
   }
 
   public registrarCodigo() {
-    // this.router.navigate(["bases-promocion"]);
+    this.router.navigate(["instrucciones"]);
   }
 
   public changeTienda(event: any) {

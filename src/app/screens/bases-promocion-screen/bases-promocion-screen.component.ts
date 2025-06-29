@@ -7,14 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./bases-promocion-screen.component.scss']
 })
 export class BasesPromocionScreenComponent implements OnInit {
-  constructor() { }
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
 
   }
 
   public goInstrucciones() {
-
+    this.router.navigate(["instrucciones"]);
   }
 
   public isMobile() {
