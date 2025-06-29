@@ -26,7 +26,7 @@ La aplicación está diseñada para funcionar como una **Progressive Web App (PW
 - TypeScript
 - HTML5 / CSS3 / SCSS
 - LocalStorage para persistencia de perfil
-- PWA (Service Worker, Manifest)
+- PWA (Service Worker, Manifest) [Link PWA](https://carrera-ducati-webapp.web.app/)
 
 ## 🚀 Instalación y ejecución local
 
